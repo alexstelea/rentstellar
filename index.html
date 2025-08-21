@@ -6,13 +6,6 @@
   <title>Stellar Rentals | Metro Atlanta Property Management</title>
   <meta name="description" content="Local, family-run property management for short- and long-term rentals across Metro Atlanta. Superhost expertise + modern tech for stress-free returns." />
   <meta name="theme-color" content="#0f172a" />
-
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,11 +22,14 @@
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
-        <!-- HOUSE LOGO -->
+        <!-- LOGO (house inside dark circle) -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="h-9 w-9 rounded-2xl bg-slate-900 p-1">
           <circle cx="24" cy="24" r="22" fill="#0f172a"/>
+          <!-- Roof -->
           <path d="M12 23 L24 14 L36 23" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- House body -->
           <rect x="16" y="22" width="16" height="12" rx="2" ry="2" stroke="#ffffff" stroke-width="3" fill="none"/>
+          <!-- Door -->
           <rect x="21" y="24" width="6" height="10" fill="#ffffff" rx="1"/>
         </svg>
         <div class="leading-tight">
@@ -54,6 +50,13 @@
 
   <!-- HERO -->
   <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-20 select-none" aria-hidden>
+      <svg class="w-[120%] -translate-x-10 -translate-y-8" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="120" r="120" fill="#0f172a"/>
+        <circle cx="560" cy="60" r="60" fill="#334155"/>
+        <circle cx="980" cy="180" r="160" fill="#0f172a"/>
+      </svg>
+    </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
       <div>
         <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
@@ -72,6 +75,217 @@
           <a href="#services" class="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-white border border-slate-200 font-semibold text-slate-900 card">Explore Services</a>
         </div>
       </div>
+      <div class="bg-white rounded-3xl p-6 card soft-shadow">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-2xl bg-[url('https://images.unsplash.com/photo-1505692971045-0a1b0a7a8a4a?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center h-40"></div>
+          <div class="rounded-2xl bg-[url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center h-40"></div>
+          <div class="rounded-2xl bg-[url('https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center h-40"></div>
+          <div class="rounded-2xl bg-[url('https://images.unsplash.com/photo-1560448075-bb4caa6c0f11?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center h-40"></div>
+        </div>
+        <p class="text-sm text-slate-500 mt-3">Photography placeholders – replace with your properties.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BADGE STRIP -->
+  <section class="py-6 border-y border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="p-3">
+        <div class="text-2xl font-extrabold text-slate-900">9 yrs</div>
+        <div class="text-xs text-slate-500">Hosting experience</div>
+      </div>
+      <div class="p-3">
+        <div class="text-2xl font-extrabold text-slate-900">150+</div>
+        <div class="text-xs text-slate-500">Guest reviews</div>
+      </div>
+      <div class="p-3">
+        <div class="text-2xl font-extrabold text-slate-900">4.99</div>
+        <div class="text-xs text-slate-500">Average rating</div>
+      </div>
+      <div class="p-3">
+        <div class="text-2xl font-extrabold text-slate-900">ATL</div>
+        <div class="text-xs text-slate-500">Metro expertise</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Owner Services</h2>
+        <p class="mt-3 text-slate-600">Full-service management for <span class="font-semibold">short-term</span> and <span class="font-semibold">long-term</span> rentals—built on local insight, family values, and efficient operations.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Short Term -->
+        <div class="bg-white rounded-3xl p-6 card">
+          <div class="text-lg font-semibold">Short-Term Management</div>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li>• Listing setup & professional copy</li>
+            <li>• Dynamic pricing & calendar optimization</li>
+            <li>• Guest screening & 24/7 messaging</li>
+            <li>• Turnover cleaning & maintenance coordination</li>
+            <li>• Smart locks & digital guidebooks</li>
+          </ul>
+        </div>
+        <!-- Long Term -->
+        <div class="bg-white rounded-3xl p-6 card">
+          <div class="text-lg font-semibold">Long-Term Management</div>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li>• Tenant marketing & screening</li>
+            <li>• Lease execution & online rent collection</li>
+            <li>• Reliable maintenance network</li>
+            <li>• Inspections & compliance guidance</li>
+            <li>• Owner reporting & statements</li>
+          </ul>
+        </div>
+        <!-- Premium -->
+        <div class="bg-white rounded-3xl p-6 card">
+          <div class="text-lg font-semibold">Premium Add-Ons</div>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li>• Interior design & staging</li>
+            <li>• Listing photography</li>
+            <li>• Welcome baskets & concierge</li>
+            <li>• Revenue audits & strategy</li>
+            <li>• New-host setup & coaching</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section id="tech" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Hospitality + Technology</h2>
+        <p class="mt-4 text-slate-600">Our stack keeps owners informed and guests delighted—without the busywork. Faster response times, smarter pricing, transparent reporting.</p>
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-2xl border border-slate-200 card">
+            <div class="font-semibold">Dynamic Pricing</div>
+            <p class="text-sm text-slate-600 mt-1">Real-time market data maximizes occupancy and rates.</p>
+          </div>
+          <div class="p-4 rounded-2xl border border-slate-200 card">
+            <div class="font-semibold">Instant Messaging</div>
+            <p class="text-sm text-slate-600 mt-1">Automations + human touch keep replies under a minute.</p>
+          </div>
+          <div class="p-4 rounded-2xl border border-slate-200 card">
+            <div class="font-semibold">Smart Access</div>
+            <p class="text-sm text-slate-600 mt-1">Smart locks & digital guidebooks for seamless arrivals.</p>
+          </div>
+          <div class="p-4 rounded-2xl border border-slate-200 card">
+            <div class="font-semibold">Owner Dashboard</div>
+            <p class="text-sm text-slate-600 mt-1">Clear performance insights and monthly statements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-900 text-white rounded-3xl p-8 soft-shadow">
+        <div class="text-sm uppercase tracking-widest text-slate-400">Why owners switch to us</div>
+        <h3 class="mt-2 text-2xl font-extrabold">Local, family-run service with enterprise-grade tools</h3>
+        <ul class="mt-6 space-y-3 text-slate-200">
+          <li>• Transparent pricing and no junk fees</li>
+          <li>• Faster bookings through optimized listings</li>
+          <li>• Proactive maintenance and vendor coordination</li>
+          <li>• Guests feel at home — better reviews, more repeats</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF / RESULTS -->
+  <section id="proof" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Results That Matter</h2>
+        <p class="mt-3 text-slate-600">Built from real hosting success across Atlanta: consistent 5-star stays, smooth operations, and strong owner ROI.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-3xl p-6 card">
+          <div class="text-4xl font-extrabold text-slate-900">4.99</div>
+          <div class="mt-1 text-sm text-slate-600">Average guest rating from 150+ reviews</div>
+        </div>
+        <div class="bg-white rounded-3xl p-6 card">
+          <div class="text-4xl font-extrabold text-slate-900">Under 1 min</div>
+          <div class="mt-1 text-sm text-slate-600">Typical guest response time with smart automations</div>
+        </div>
+        <div class="bg-white rounded-3xl p-6 card">
+          <div class="text-4xl font-extrabold text-slate-900">+Revenue</div>
+          <div class="mt-1 text-sm text-slate-600">Dynamic pricing and pro listings increase earnings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Simple, Flexible Pricing</h2>
+        <p class="mt-3 text-slate-600">Transparent plans for every property. Luxury and white-glove options available.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <!-- Messaging Only -->
+        <div class="rounded-3xl p-6 border border-slate-200 card">
+          <div class="font-semibold text-slate-900">Messaging & Coordination</div>
+          <div class="mt-2 text-3xl font-extrabold">10–15% <span class="text-base font-medium text-slate-500">per booking</span></div>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>• Guest messaging</li>
+            <li>• Booking management</li>
+            <li>• Cleaner coordination</li>
+          </ul>
+        </div>
+        <!-- Full Mgmt -->
+        <div class="rounded-3xl p-6 border-2 border-slate-900 soft-shadow">
+          <div class="font-semibold text-slate-900">Full Management</div>
+          <div class="mt-2 text-3xl font-extrabold">15–25% <span class="text-base font-medium text-slate-500">per booking</span></div>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>• Pricing optimization</li>
+            <li>• 24/7 guest support</li>
+            <li>• Turnovers & maintenance</li>
+          </ul>
+        </div>
+        <!-- Luxury -->
+        <div class="rounded-3xl p-6 border border-slate-200 card">
+          <div class="font-semibold text-slate-900">Luxury / White-Glove</div>
+          <div class="mt-2 text-3xl font-extrabold">25–30% <span class="text-base font-medium text-slate-500">per booking</span></div>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>• Concierge check-ins</li>
+            <li>• Design & staging</li>
+            <li>• Owner reporting dashboard</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">Listing setup available from $150–$1,000 depending on scope.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Talk With a Local Owner</h2>
+        <p class="mt-3 text-slate-600">We’re Atlanta locals and parents—we know how important a reliable, welcoming home is. Let’s discuss your goals and design the right plan.</p>
+        <div class="mt-6 bg-white rounded-3xl p-6 card">
+          <div class="font-semibold">What you’ll get</div>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li>• Free revenue and readiness review</li>
+            <li>• Clear, transparent pricing</li>
+            <li>• A roadmap to launch or improve performance</li>
+          </ul>
+        </div>
+      </div>
+      <form class="bg-white rounded-3xl p-6 card" onsubmit="event.preventDefault(); window.location.href=('mailto:hello@stellarrentals.com?subject='+encodeURIComponent('New Owner Inquiry from Stellar Rentals')+'&body='+encodeURIComponent('Name: '+document.getElementById('name').value+'%0AEmail: '+document.getElementById('email').value+'%0APhone: '+document.getElementById('phone').value+'%0AProperty Type/Location: '+document.getElementById('prop').value+'%0AMessage: '+document.getElementById('msg').value));">
+        <div class="text-lg font-semibold">Get a Free Consultation</div>
+        <div class="mt-4 grid sm:grid-cols-2 gap-4">
+          <input id="name" required placeholder="Name" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900" />
+          <input id="email" required type="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900" />
+          <input id="phone" placeholder="Phone" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900" />
+          <input id="prop" placeholder="Property type / location" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900" />
+          <textarea id="msg" placeholder="How can we help?" class="sm:col-span-2 w-full rounded-xl border border-slate-300 px-3 py-2 h-28 focus:outline-none focus:ring-2 focus:ring-slate-900"></textarea>
+        </div>
+        <button type="submit" class="mt-4 inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-slate-900 text-white font-semibold soft-shadow">Send Inquiry</button>
+        <p class="mt-3 text-xs text-slate-500">Or email us directly: <a href="mailto:hello@stellarrentals.com" class="underline">hello@stellarrentals.com</a></p>
+      </form>
     </div>
   </section>
 
@@ -91,7 +305,7 @@
         <div>Local, family-run property management in Metro Atlanta.</div>
       </div>
       <div class="md:text-center">© <span id="yr"></span> Stellar Rentals LLC. All rights reserved.</div>
-      <div class="md:text-right">Based in Decatur • Serving Metro Atlanta</div>
+      <div class="md:text-right">Based in Atlanta • Serving Metro Atlanta</div>
     </div>
   </footer>
 
