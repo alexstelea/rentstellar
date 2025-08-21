@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RentStellar | Metro Atlanta Property Management</title>
+  <meta name="description" content="Local, family‑run property management for short‑ and long‑term rentals across Metro Atlanta. Superhost expertise + modern tech for stress‑free returns." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    .card{box-shadow:0 1px 2px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.1)}
+    .soft-shadow{box-shadow:0 10px 30px rgba(2,6,23,.08)}
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-slate-50 text-slate-800">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <!-- LOGO -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="h-9 w-9 rounded-2xl bg-slate-900 p-1">
+          <circle cx="24" cy="24" r="22" fill="#0f172a"/>
+          <path d="M12 28l6-8 6 8 6-8 6 8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="24" y="44" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Inter, sans-serif">RS</text>
+        </svg>
+        <div class="leading-tight">
+          <div class="font-extrabold tracking-tight text-slate-900 text-lg">RentStellar</div>
+          <div class="text-xs text-slate-500">Local • Family‑Run • Metro Atlanta</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#services" class="text-slate-600 hover:text-slate-900">Services</a>
+        <a href="#tech" class="text-slate-600 hover:text-slate-900">Technology</a>
+        <a href="#proof" class="text-slate-600 hover:text-slate-900">Results</a>
+        <a href="#pricing" class="text-slate-600 hover:text-slate-900">Pricing</a>
+        <a href="#contact" class="text-slate-600 hover:text-slate-900">Contact</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-2xl px-4 py-2 bg-slate-900 text-white text-sm font-semibold soft-shadow">Get a Free Consult</a>
+    </div>
+  </header>
+
+  <!-- rest of site remains unchanged -->
+
+  <footer class="py-10 border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600 grid md:grid-cols-3 gap-6 items-center">
+      <div>
+        <div class="font-extrabold text-slate-900 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="h-6 w-6">
+            <circle cx="24" cy="24" r="22" fill="#0f172a"/>
+            <path d="M12 28l6-8 6 8 6-8 6 8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          RentStellar
+        </div>
+        <div>Local, family‑run property management in Metro Atlanta.</div>
+      </div>
+      <div class="md:text-center">© <span id="yr"></span> RentStellar LLC. All rights reserved.</div>
+      <div class="md:text-right">Based in Decatur • Serving Metro Atlanta</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
